@@ -1,15 +1,20 @@
+// App.tsx
 import React, { useState } from 'react';
 import MasterView from './components/MasterView';
 import DetailView from './components/DetailView';
 import { Item } from './types/types';
 
-const App = () => {
+const App: React.FC = () => {
   const [selectedItem, setSelectedItem] = useState<Item | null>(null);
 
   return (
-    <div>
-      <MasterView onItemSelected={setSelectedItem} />
-      <DetailView item={selectedItem} />
+    <div style={{ display: 'flex', flexDirection: 'row' }}>
+      <div style={{ width: '50%' }}>
+        <MasterView onItemSelected={setSelectedItem} />
+      </div>
+      <div style={{ width: '50%' }}>
+        <DetailView item={selectedItem} />
+      </div>
     </div>
   );
 };
