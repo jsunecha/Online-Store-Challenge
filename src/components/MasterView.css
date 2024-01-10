@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    .master-view-card {
+      flex-direction: column; /* Stack image and text vertically */
+      align-items: center;    /* Center align the content */
+      height: auto;           /* Adjust height automatically */
+    }
+  
+    .master-view-image {
+      width: 100px; /* Adjust image width */
+      height: 100px; /* Adjust image height */
+    }
+  
+    .master-view-text {
+      padding: 10px; /* Add padding around text */
+    }
+  
+  }
+  

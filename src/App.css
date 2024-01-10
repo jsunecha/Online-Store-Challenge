@@ -2,6 +2,37 @@
   text-align: center;
 }
 
+/* Styles for the back button, adjust as needed */
+.back-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /* additional styles for the button */
+}
+
+/* Media queries for mobile screens */
+@media (max-width: 768px) {
+  /* Hide MasterView and adjust DetailView when on mobile */
+  .master-view {
+    display: none;
+  }
+
+  .detail-view {
+    width: 100%; /* Take full width */
+    height: 100%; /* Take full height */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* Style adjustments for the back button on mobile */
+  .back-button {
+    display: block; /* Ensure it's visible */
+    /* additional styles if needed */
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
