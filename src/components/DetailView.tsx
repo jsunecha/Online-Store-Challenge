@@ -40,9 +40,21 @@ const DetailView: React.FC<DetailViewProps> = ({ item, onBack, isMobile }) => {
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '100%' }}>
       {/* Conditionally render the back button for mobile view */}
       {isMobile && (
-        <IconButton onClick={onBack} style={{ position: 'absolute', top: 10, left: 10, zIndex: 1 }}>
+        <IconButton
+          onClick={onBack}
+          style={{
+            position: 'absolute',
+            top: 10,
+            left: 10,
+            zIndex: 1,
+            borderRadius: '50%',
+            backgroundColor: 'white',
+            padding: '5px',
+          }}
+        >
           <ArrowBackIcon />
         </IconButton>
+
       )}
       {/* Rest of the detail view layout */}
       {/* Image container */}
